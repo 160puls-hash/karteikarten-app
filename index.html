@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Karteikarten Fahrlehrer</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+</head>
+
+<body>
+
+<h1>Karteikarten Fahrlehrer</h1>
+
+<select id="themaSelect" onchange="themaWechseln()">
+  <option value="alle">🎲 Alle Themen</option>
+  <option value="thema1">Thema 1</option>
+  <option value="thema2">Thema 2</option>
+  <option value="thema3">Thema 3</option>
+  <option value="thema4">Thema 4</option>
+</select>
+
+<div id="kartenInfo" style="margin-top:10px; font-size:0.9rem; color:#475569;">
+  Karte 1 von 1
+</div>
+
+<div id="lernStatusInfo" style="margin-top:6px; font-size:0.85rem; color:#16a34a;">
+</div>
+
+<div class="karte">
+  <div id="frage">
+    Frage wird geladen...
+  </div>
+
+  <div id="antwort" style="display:none; margin-top:15px;">
+    Antwort wird geladen...
+  </div>
+</div>
+
+<button onclick="antwortZeigen()">Antwort anzeigen</button>
+<button onclick="naechsteKarte()">➡️ Nächste</button>
+<button onclick="gelernt()">✅ Gelernt</button>
+<button onclick="gelerntZuruecksetzen()">❌ Vergessen</button>
+<button onclick="zufallsKarte()">🎲 Zufall</button>
+
+
+<div style="margin-top:15px;">
+  <input
+    type="number"
+    id="kartenNummer"
+    placeholder="Karte Nr."
+    min="1"
+    style="width:110px; padding:8px;"
+  >
+  <button onclick="geheZuKarte()">Start</button>
+</div>
+
+
+<script src="app.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
+
+
+</body>
+</html>
