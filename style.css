@@ -28,6 +28,22 @@ h1 {
   font-size: 1.2rem;
 }
 
+/* FRAGE */
+#frage {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+/* ANTWORT */
+#antwort {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid #e5e7eb; /* Trennlinie */
+  color: #374151;
+  font-size: 1.15rem;
+}
+
 button {
   width: 90%;
   max-width: 480px;
