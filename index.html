@@ -7,6 +7,8 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#2563eb">
+
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,13 +22,11 @@
 
 <h1>Karteikarten Fahrlehrer</h1>
 
-<select id="themaSelect" onchange="themaWechseln()">
+  <select id="themaSelect" onchange="themaWechseln()">
   <option value="alle">🎲 Alle Themen</option>
-  <option value="thema1">Thema 1</option>
-  <option value="thema2">Thema 2</option>
-  <option value="thema3">Thema 3</option>
-  <option value="thema4">Thema 4</option>
+  <option value="paedagogik">Pädagogik / Erziehung</option>
 </select>
+
 
 <div id="kartenInfo" style="margin-top:10px; font-size:0.9rem; color:#475569;">
   Karte 1 von 1
@@ -58,7 +58,8 @@
     id="kartenNummer"
     placeholder="Karte Nr."
     min="1"
-    style="width:110px; padding:8px;"
+    style="width:90%; max-width:480px; padding:14px;"
+
   >
   <button onclick="geheZuKarte()">Start</button>
 </div>
@@ -68,7 +69,8 @@
 
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
+navigator.serviceWorker.register("./sw.js");
+
 }
 </script>
 
