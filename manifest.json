@@ -1,8 +1,8 @@
 {
   "name": "Karteikarten Fahrlehrer",
   "short_name": "Karteikarten",
-  "start_url": "./",
-"scope": "./"
+  "start_url": "/karteikarten-app/",
+"scope": "/karteikarten-app/",
 
   "display": "standalone",
   "background_color": "#eef1f4",
@@ -21,3 +21,4 @@
     }
   ]
 }
+
