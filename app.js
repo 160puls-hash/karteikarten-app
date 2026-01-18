@@ -976,7 +976,9 @@ const daten = {
 // ================= LOGIK =================
 let aktuelleKarten = [];
 let aktuellePosition = 0;
+let aktuellesThema = "paedagogik";
 
+// **Fett** + Zeilenumbrüche
 function renderText(text) {
   if (!text) return "";
   return text
@@ -984,18 +986,45 @@ function renderText(text) {
     .replace(/\n/g, "<br>");
 }
 
+// Fortschritt speichern
+function speichereFortschritt() {
+  localStorage.setItem("lastThema", aktuellesThema);
+  localStorage.setItem("pos_" + aktuellesThema, String(aktuellePosition));
+}
+
+// Fortschritt laden
+function ladeFortschritt() {
+  const last = localStorage.getItem("lastThema");
+  if (last && daten[last]) {
+    aktuellesThema = last;
+    const select = document.getElementById("themaSelect");
+    if (select) select.value = last;
+  }
+
+  const p = parseInt(localStorage.getItem("pos_" + aktuellesThema), 10);
+  if (!isNaN(p)) aktuellePosition = p;
+}
+
 function themaWechseln() {
-  // passt zu deinem HTML-select value="paedagogik"
   const select = document.getElementById("themaSelect");
   const thema = select ? select.value : "paedagogik";
 
   if (thema === "alle") {
     aktuelleKarten = Object.values(daten).flat();
+    aktuellesThema = "alle";
   } else {
-    aktuelleKarten = daten[thema] || daten.paedagogik;
+    aktuelleKarten = daten[thema] || [];
+    aktuellesThema = thema;
   }
 
-  aktuellePosition = 0;
+  // gespeicherte Position pro Thema laden
+  const p = parseInt(localStorage.getItem("pos_" + aktuellesThema), 10);
+  aktuellePosition = !isNaN(p) ? p : 0;
+
+  // absichern
+  if (aktuellePosition < 0) aktuellePosition = 0;
+  if (aktuellePosition >= aktuelleKarten.length) aktuellePosition = 0;
+
   zeigeKarte();
 }
 
@@ -1003,20 +1032,40 @@ function zeigeKarte() {
   const frageEl = document.getElementById("frage");
   const antwortEl = document.getElementById("antwort");
   const infoEl = document.getElementById("kartenInfo");
+  const lernInfoEl = document.getElementById("lernStatusInfo");
 
   if (!aktuelleKarten.length) {
-    frageEl.innerText = "Keine Karten vorhanden";
-    antwortEl.style.display = "none";
-    infoEl.innerText = "";
+    if (frageEl) frageEl.innerText = "Keine Karten vorhanden";
+    if (antwortEl) antwortEl.style.display = "none";
+    if (infoEl) infoEl.innerText = "";
+    if (lernInfoEl) lernInfoEl.innerText = "";
     return;
   }
 
-  const karte = aktuelleKarten[aktuellePosition];
-  frageEl.innerHTML = renderText(karte.frage);
-  antwortEl.innerHTML = renderText(karte.antwort);
-  antwortEl.style.display = "none";
+  if (aktuellePosition < 0) aktuellePosition = 0;
+  if (aktuellePosition >= aktuelleKarten.length) aktuellePosition = aktuelleKarten.length - 1;
 
-  infoEl.innerText = `Karte ${aktuellePosition + 1} von ${aktuelleKarten.length}`;
+  const karte = aktuelleKarten[aktuellePosition];
+
+  if (frageEl) frageEl.innerHTML = renderText(karte.frage);
+  if (antwortEl) {
+    antwortEl.innerHTML = renderText(karte.antwort);
+    antwortEl.style.display = "none";
+  }
+
+  if (infoEl) infoEl.innerText = `Karte ${aktuellePosition + 1} von ${aktuelleKarten.length}`;
+
+  // Lernstatus anzeigen
+  const status = JSON.parse(localStorage.getItem("gelerntStatus") || "{}");
+  const stufe = status[karte.id] || 0;
+  if (lernInfoEl) {
+    lernInfoEl.innerText =
+      stufe === 0 ? "Status: Nicht gelernt"
+      : stufe === 1 ? "Status: Gelernt"
+      : "Status: Sicher gelernt";
+  }
+
+  speichereFortschritt();
 }
 
 function naechsteKarte() {
@@ -1025,17 +1074,20 @@ function naechsteKarte() {
   zeigeKarte();
 }
 
-
 function vorherigeKarte() {
   if (!aktuelleKarten.length) return;
-
-  aktuellePosition =
-    (aktuellePosition - 1 + aktuelleKarten.length) % aktuelleKarten.length;
-
+  aktuellePosition = (aktuellePosition - 1 + aktuelleKarten.length) % aktuelleKarten.length;
   zeigeKarte();
 }
 
+function zufallKarten() {
+  if (!aktuelleKarten.length) return;
 
+  // echte Zufallskarte (ohne Shuffle)
+  const neu = Math.floor(Math.random() * aktuelleKarten.length);
+  aktuellePosition = neu;
+  zeigeKarte();
+}
 
 function antwortZeigen() {
   const a = document.getElementById("antwort");
@@ -1043,19 +1095,49 @@ function antwortZeigen() {
   a.style.display = a.style.display === "none" ? "block" : "none";
 }
 
-function zufallKarten() {
+// Suche per Kartennummer (1..N)
+function geheZuKarte() {
   if (!aktuelleKarten.length) return;
 
-  // Fisher-Yates Shuffle
-  for (let i = aktuelleKarten.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [aktuelleKarten[i], aktuelleKarten[j]] =
-      [aktuelleKarten[j], aktuelleKarten[i]];
-  }
+  const input = document.getElementById("kartenNummer");
+  if (!input) return;
 
-  aktuellePosition = 0;
+  const n = parseInt(input.value, 10);
+  if (isNaN(n)) return;
+
+  if (n >= 1 && n <= aktuelleKarten.length) {
+    aktuellePosition = n - 1;
+    zeigeKarte();
+  }
+}
+
+// Lernstatus hochzählen (0 -> 1 -> 2)
+function gelernt() {
+  if (!aktuelleKarten.length) return;
+
+  const karte = aktuelleKarten[aktuellePosition];
+  const status = JSON.parse(localStorage.getItem("gelerntStatus") || "{}");
+
+  status[karte.id] = Math.min((status[karte.id] || 0) + 1, 2);
+  localStorage.setItem("gelerntStatus", JSON.stringify(status));
   zeigeKarte();
 }
 
+// Lernstatus zurücksetzen
+function gelerntZuruecksetzen() {
+  if (!aktuelleKarten.length) return;
 
-window.addEventListener("load", themaWechseln);
+  const karte = aktuelleKarten[aktuellePosition];
+  const status = JSON.parse(localStorage.getItem("gelerntStatus") || "{}");
+
+  delete status[karte.id];
+  localStorage.setItem("gelerntStatus", JSON.stringify(status));
+  zeigeKarte();
+}
+
+// Start: letztes Thema + letzte Karte wiederherstellen
+window.addEventListener("load", () => {
+  ladeFortschritt();
+  themaWechseln();
+});
+
