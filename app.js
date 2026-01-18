@@ -485,7 +485,488 @@ const daten = {
         "und ebenfalls ein Wahrnehmungsfehler.\n\n" +
         "Wichtige Informationen können dadurch aus der Wahrnehmung\n" +
         "herausfallen."
-    }
+    },
+
+    ,
+    {
+      id: "paed-25",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was ist der Hippocampus?",
+      antwort:
+        "Einem Teil unseres Gehirns kommt dabei eine zentrale Bedeutung und Aufgabe zu.\n" +
+        "Es handelt sich um den Hippocampus. Nur er macht es möglich, **dass neue Sachverhalte gelernt werden können.**\n" +
+        "Er befindet sich auf **beiden Seiten des Gehirns**, tief im unteren Bereich des **Schläfenlappens**.\n\n" +
+        "Im Hippocampus fließen die Informationen der verschiedenen sensorischen Systeme zusammen.\n" +
+        "Dazu fallen zum Beispiel externe Sinneseindrücke des **Sehens, Hörens, Schmeckens, Riechens** und **Fühlens**\n" +
+        "und auch interne, vom Körper selbst ausgehende Signale.\n\n" +
+        "Aufgrund der immensen Datenfülle, die pro Sekunde an das Gehirn gesendet wird,\n" +
+        "muss der Hippocampus eine Auswahl treffen.\n" +
+        "**Beim Lernen trifft er Entscheidungen** nach **Dringlichkeit, Wichtigkeit** und **Neuigkeit**."
+    },
+
+    {
+      id: "paed-26",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Ausbildungsgrundsätze des Lernens?",
+      antwort:
+        "1. Der Mensch lernt vom **Bekannten zum Unbekannten.**\n" +
+        "- Beispiel:\n" +
+        "Die ersten Fahrübungen auf einem ruhigen Platz können jetzt auf die Fahrt im Stadtverkehr übertragen und erweitert werden.\n\n" +
+        "2. Der Mensch lernt vom **Leichten zum Schweren.**\n" +
+        "- Beispiel:\n" +
+        "Das einfache Abbiegen wurde gelernt und kann jetzt zum mehrspurigen Abbiegen erweitert werden.\n\n" +
+        "3. Der Mensch lernt vom **Einfachen zum Komplexen.**\n" +
+        "- Beispiel:\n" +
+        "Einfache Fahrmanöver wie das Wechseln einer Spur wurden sicher gelernt,\n" +
+        "jetzt können komplexere Manöver, wie das Auffahren auf eine Autobahn, geübt werden."
+    },
+
+    {
+      id: "paed-27",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was sind Chunks?",
+      antwort:
+        "**Chunks sind kleine Speichereinheiten (Kurzzeitgedächtnisspanne).**\n" +
+        "Nach einer allgemeingültigen Faustregel kann unser Kurzzeitgedächtnis,\n" +
+        "in dem ja alle neuen Impulse zuerst eintreffen, etwa **7 ± 2 Chunks** verarbeiten.\n\n" +
+        "Aufteilung z. B. beim Autobahnauffahren:\n" +
+        "Orientierung, Auffahren, Einfädeln, Fahren im Fahrstreifen,\n" +
+        "Fahrstreifenwechsel, Rastplatz anfahren, zurückfahren auf die Autobahn\n" +
+        "und schließlich Ausfahren von der Autobahn."
+    },
+
+    {
+      id: "paed-28",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was ist Legasthenie?",
+      antwort:
+        "**Legasthenie** ist eine strukturelle Lernstörung – die sogenannte **Lese-Rechtschreib-Schwäche (LRS).**\n\n" +
+        "Menschen mit Legasthenie beklagen sich oft über Schwindelgefühl, Kopfschmerzen oder Bauchschmerzen beim Lesen.\n" +
+        "Sie werden verwirrt durch Buchstaben, Zahlen, Worte, Reihenfolgen oder verbale Erklärungen.\n\n" +
+        "**Mögliche weitere Merkmale:**\n" +
+        "- niedrige Lesegeschwindigkeit\n" +
+        "- häufiges Stocken oder Verlieren der Zeile im Text\n" +
+        "- Auslassen, Vertauschen oder Hinzufügen von Wörtern, Silben oder einzelnen Buchstaben\n" +
+        "- Schwierigkeiten, den Inhalt des gelesenen Textes wiederzugeben\n" +
+        "- hohe Fehleranzahl bei Diktaten und auch beim Abschreiben von Texten\n" +
+        "- oft auch viele Fehler in Grammatik und Zeichensetzung\n" +
+        "- unleserliche Handschrift"
+    },
+
+    {
+      id: "paed-29",
+      frage:
+        "**Planung von theoretischem Unterricht**\n" +
+        "Welche Unterrichtsmethoden (Sozialformen) kennen Sie?",
+      antwort:
+        "**Frontalunterricht**\n" +
+        "Hier steht die Lehrperson im Vordergrund. Die Lehrperson hat die meisten Redeanteile,\n" +
+        "die Schüler sind meist in Zuhörerrollen. Sie müssen dem Vortrag folgen und werden gelegentlich aufgefordert,\n" +
+        "Fragen zu beantworten.\n\n" +
+        "**(Klein-)Gruppenarbeit**\n" +
+        "Bei der (Klein-)Gruppenarbeit wird die Lerngruppe für eine bestimmte Zeit in verschiedene Kleingruppen\n" +
+        "von ca. 3–5 Schülern aufgeteilt.\n\n" +
+        "**Partnerarbeit**\n" +
+        "Bei der Partnerarbeit arbeiten jeweils zwei Schüler für einen begrenzten Zeitraum an einer bestimmten Aufgabe.\n\n" +
+        "**Einzelarbeit**\n" +
+        "Ebenso wie bei der Partnerarbeit bietet sich auch die Einzelarbeit an,\n" +
+        "wenn es darum geht, Gelerntes zu üben und zu vertiefen."
+    },
+
+    {
+      id: "paed-30",
+      frage:
+        "**Unterrichtsplanung**\n" +
+        "Kreismodell nach Pia Klammer?",
+      antwort:
+        "**Die Planung des Unterrichts beschreibt Pia Klammer mit folgendem Ablauf (Kreislauf):**\n\n" +
+        "1. FahrschAusbO + curricularer Leitfaden\n" +
+        "2. Bedingungsanalyse\n" +
+        "3. Methodische / didaktische Analyse\n" +
+        "4. Medien\n" +
+        "5. Lernzielkontrolle\n" +
+        "6. Unterrichtsverlaufsplan\n" +
+        "7. Durchführung Unterricht\n" +
+        "8. Auswertung"
+    },
+
+    {
+      id: "paed-31",
+      frage:
+        "**Unterricht**\n" +
+        "Was versteht man unter Wertewandel?",
+      antwort:
+        "**Die Fahrschule steht bei Schülern nicht mehr als erster Prioritätspunkt.**\n\n" +
+        "Die Schüler haben meist andere Interessen:\n" +
+        "Schule, Freizeit, Freunde, andere Hobbys … erst dann folgt die Fahrschule.\n\n" +
+        "**Ergo:**\n" +
+        "Dadurch weniger Erfahrung der Schüler = mehr Motivierung durch die Fahrlehrer gefragt.\n\n" +
+        "**Grundsatz Wertewandel:**\n" +
+        "Der Wertewandel ist ein Wandel der gesellschaftlichen individuellen Normen\n" +
+        "und Wertvorstellungen in bestimmten Zeiträumen."
+    },
+
+    {
+      id: "paed-32",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was sind „Fähigkeiten“ und was sind „Fertigkeiten“?",
+      antwort:
+        "Die geistige und praktische Anlage, die zu etwas befähigt.\n" +
+        "Voraussetzung, die neben der Motivation zur Leistungserbringung erforderlich ist\n" +
+        "(Leistung = Motivation + Fähigkeit).\n\n" +
+        "Fähigkeiten können sowohl angeboren (Begabungen) als auch erworben (Fertigkeiten) sein\n" +
+        "und variieren nach dem Grad ihrer Ausprägung von Person zu Person.\n\n" +
+        "**Merke:**\n" +
+        "**- Fähigkeiten bringen Fahrschüler mit, um ein KFZ zu führen.**\n" +
+        "**- Fertigkeiten müssen Fahrlehrer den Fahrschülern mitgeben (Ausbildung).**"
+    },
+
+    {
+      id: "paed-33",
+      frage:
+        "**Ausbildung und Gedächtnis**\n" +
+        "Welche Speicher werden dem „Drei-Speicher-Modell“ zugeordnet?",
+      antwort:
+        "**Ultrakurzzeitgedächtnis:**\n" +
+        "Auch sensorisches Gedächtnis genannt.\n" +
+        "- Millisekunden bis Sekunden, danach erlischt die Information ohne eine Spur zu hinterlassen.\n\n" +
+        "**Kurzzeitgedächtnis:**\n" +
+        "(Arbeitsgedächtnis)\n" +
+        "- Information bleibt für ca. 20–45 Sekunden. Wird mit der Information „gearbeitet“\n" +
+        "und es gibt einen Sinnzusammenhang, dann wird diese an das Langzeitgedächtnis übermittelt.\n\n" +
+        "**Langzeitgedächtnis:**\n" +
+        "(Feste Speicherung)\n" +
+        "- Die feste Speicherung erfolgt hier. Die Informationen werden nicht vergessen,\n" +
+        "allerdings kann es sein, dass diese nicht immer auf Anhieb gefunden werden.\n" +
+        "Bei Zusammenhängen werden die Informationen wiedergefunden."
+    },
+
+    {
+      id: "paed-34",
+      frage:
+        "**Einstellungen**\n" +
+        "Wie kann man Einstellungen bei Fahrschülern verändern?",
+      antwort:
+        "Man kann Einstellungen bei Fahrschülern im Unterricht verändern.\n" +
+        "Dafür kann man verschiedene **Unterrichtsmethoden** wählen.\n\n" +
+        "**Methoden-Beispiele:**\n" +
+        "Frontalunterricht, Zeigen eines Videos, Lösungen zu einem Thema durch die Schüler erarbeiten lassen.\n\n" +
+        "**Die Änderung muss durch den Fahrlehrer geschehen:**\n" +
+        "- Auf Gegenargumente der Schüler muss sachlich geantwortet werden.\n" +
+        "- Der Sachverhalt muss ins Bewusstsein der Schüler gebracht werden.\n" +
+        "- Interesse wecken und Gefühle ansprechen.\n" +
+        "- Argumente sammeln, klären und bewerten.\n" +
+        "- Verankerung ins Gedächtnis.\n" +
+        "- Persönliche Veränderung anregen.\n" +
+        "- Möglichkeiten für Veränderung zeigen."
+    },
+
+    {
+      id: "paed-35",
+      frage:
+        "**Angst**\n" +
+        "Wie kann sich Angst oder Prüfungsangst auf unseren Körper auswirken?",
+      antwort:
+        "**Prüfungsangst kann sich auf unterschiedliche Weise auf unsere Gefühle, geistig und auf den Körper auswirken.**\n\n" +
+        "Weitere Symptome sind:\n" +
+        "- Angst des Versagens\n" +
+        "- Unwohlsein\n" +
+        "- Magen-Darm\n" +
+        "- Körperliche Erschöpfung\n" +
+        "- Schlafprobleme\n" +
+        "- Nervosität\n\n" +
+        "Jeder reagiert anders auf Angst, aber generell kann man sagen,\n" +
+        "dass eine Prüfung immer einen gewissen Grad an Angst oder Stress mitbringt."
+    },
+
+    {
+      id: "paed-36",
+      frage:
+        "**Emotionen**\n" +
+        "Nennen Sie die sieben „Basis-Emotionen“?",
+      antwort:
+        "- Wut\n" +
+        "- Ekel\n" +
+        "- Verachtung\n" +
+        "- Freude\n" +
+        "- Angst\n" +
+        "- Trauer\n" +
+        "- Überraschung"
+    },
+
+    {
+      id: "paed-37",
+      frage:
+        "**Visuelle Wahrnehmung**\n" +
+        "Was ist peripheres Sehen?",
+      antwort:
+        "**Peripheres Sehen ist eine Form visueller Wahrnehmung,** bei der nicht die zentrale Stelle der Netzhaut (Fovea)\n" +
+        "zum Fixieren eines Objekts benutzt wird, sondern dessen Wahrnehmung durch daneben gelegene (extrafoveale)\n" +
+        "Areale erfolgt. De facto schaut ein Betrachter an dem Objekt vorbei.\n\n" +
+        "Im Gegensatz zum fovealen Sehen, bei dem die Gesichtslinie des Auges exakt auf das gewünschte Objekt ausgerichtet ist,\n" +
+        "liefert das periphere Sehen nur grobe, unscharfe und optisch verzerrte Seheindrücke außerhalb eines festen Fixationspunktes.\n\n" +
+        "**Man spricht auch vom 180-Grad-„Rund-um-Blick“.**"
+    },
+
+    {
+      id: "paed-38",
+      frage:
+        "**Emotionen**\n" +
+        "Was ist „Thrill“?",
+      antwort:
+        "**„Thrill“** ist eine Emotion, die im Zusammenhang mit dem Erleben von Risiko auftritt.\n" +
+        "Thrill besteht aus zwei einander entgegengesetzten Gefühlen – **Angst** und **Hoffnung**.\n\n" +
+        "Die Kombination aus beiden Gefühlen (Angst / Hoffnung) kann den Erlebnisfaktor\n" +
+        "zu einem unbeschreiblichen Gefühl der Befriedigung herbeiführen."
+    },
+
+    {
+      id: "paed-39",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Unterschied Homogenität und Heterogenität?",
+      antwort:
+        "**Homogenität:**\n" +
+        "Homogenität bezeichnet in der Pädagogik und der Unterrichtslehre eine zu Lern- oder Erziehungszwecken\n" +
+        "unter bestimmten Aspekten gleichartig zusammengesetzte Gruppe von Lernenden.\n\n" +
+        "**Merkmal:**\n" +
+        "Gleiches Geschlecht, Alter, Lernziel, Vorkenntnisse, Herkunft etc.\n\n" +
+        "**Heterogenität:**\n" +
+        "In der pädagogischen Diskussion wird der Begriff der Heterogenität im Hinblick auf die Schüler in einer Lerngruppe verwendet.\n" +
+        "Er beschreibt die Unterschiedlichkeit der Schüler hinsichtlich verschiedener Merkmale, die als lernrelevant eingeschätzt werden.\n" +
+        "Diskutiert werden vor allem die Heterogenität hinsichtlich der schulischen Leistungen oder der Begabungen,\n" +
+        "hinsichtlich des Alters, des Geschlechts sowie die kulturelle Heterogenität in einer Lerngruppe."
+    },
+
+    {
+      id: "paed-40",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was ist Stress?",
+      antwort:
+        "**Der Ausdruck Stress kommt ursprünglich aus dem Englischen und bedeutet Druck, Belastung oder Spannung.**\n\n" +
+        "**Eine Person, die Stress hat oder unter Stress steht, hat die persönliche Belastungsgrenze erreicht oder überschritten.**\n\n" +
+        "Man unterscheidet zwischen Stressor und Stress.\n" +
+        "Stressor ist der Verursacher und Stress dagegen der Zustand des Organismus, der vom Stressor ausgelöst wird.\n\n" +
+        "**- Eu-Stress wird als positiv empfunden**\n" +
+        "**- Dys-Stress wird als negativ empfunden**"
+    },
+
+    {
+      id: "paed-41",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was gehört alles zu einer Bedingungsanalyse?",
+      antwort:
+        "**Wer Unterricht plant, muss zuvor die Bedingungen klären, unter denen dieser stattfinden soll.**\n\n" +
+        "Eine gründliche Analyse der Vorbedingungen umfasst mindestens folgende Bereiche:\n" +
+        "**1. Lernvoraussetzungen der Fahrschüler**\n" +
+        "**2. Lernvoraussetzungen der Fahrlehrer**\n" +
+        "**3. Rechtliche Vorgaben**\n" +
+        "**4. Räumliche und organisatorische Rahmenbedingungen**"
+    },
+
+    {
+      id: "paed-42",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Bedingungsanalyse – Lernvoraussetzungen der Fahrschüler?",
+      antwort:
+        "Zu den Lernvoraussetzungen gehören:\n" +
+        "- Vorwissen der Schüler\n" +
+        "- Alter\n" +
+        "- Geschlecht\n" +
+        "- schulischer / beruflicher Hintergrund\n" +
+        "- Interessen, Einstellungen und Erwartungen\n" +
+        "- Lernmotive\n" +
+        "- soziale und kulturelle Hintergründe der Schüler\n" +
+        "- Sprachkompetenz\n" +
+        "- Lernkompetenz\n" +
+        "- Methodenkompetenz\n" +
+        "- Intelligenz und Begabung\n" +
+        "- Arbeits- und Sozialverhalten"
+    },
+
+    {
+      id: "paed-43",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Bedingungsanalyse – Lehrvoraussetzungen der Fahrlehrer?",
+      antwort:
+        "**Lehrer müssen den Unterricht planen und auswerten, die Lerngruppe berücksichtigen und führen,\n" +
+        "den Lernstand beurteilen und angemessen auf Beiträge reagieren.**\n\n" +
+        "Die pädagogische Handlungskompetenz der Fahrlehrer zeigt sich insbesondere in den folgenden vier Kompetenzbereichen:\n" +
+        "1. **Fachkompetenz** – Fahrlehrer muss fachlich geeignet sein\n" +
+        "2. **Methodenkompetenz** – Wissen muss mit geeigneten Methoden/Techniken an die Schüler herangetragen werden\n" +
+        "3. **Sozialkompetenz** – Fahrlehrer muss auf die Schüler eingehen können und vor allem Empathie aufbauen können\n" +
+        "4. **Selbstkompetenz** – Fahrlehrer kennt eigene Stärken und Schwächen; Reflektieren ist wichtig"
+    },
+
+    {
+      id: "paed-44",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Bedingungsanalyse – Rechtliche Vorgaben?",
+      antwort:
+        "Die Ausbildung der Fahrschüler ist rechtlich klar geregelt.\n" +
+        "**Umsetzung der Ausbildung nach dem Rahmenplan!**\n\n" +
+        "- FahrschAusbO\n" +
+        "- FahrlGDV\n" +
+        "- StVG\n" +
+        "- FeV\n\n" +
+        "Weiteres:\n" +
+        "Hinzu kommen fachliche Vorgaben, die theoretisch für die praktische Ausbildung umzusetzen sind,\n" +
+        "u. a. curricularer Leitfaden."
+    },
+
+    {
+      id: "paed-45",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Bedingungsanalyse – räumliche und organisatorische Rahmenbedingungen?",
+      antwort:
+        "**Wer Schüler unterrichten möchte, muss darauf achten, dass die räumlichen und organisatorischen Rahmenbedingungen erfüllt sind.**\n\n" +
+        "Folgende Bedingungen sind zu beachten:\n" +
+        "- Größe der Unterrichtsräume (angepasst auf die Anzahl der Schüler)\n" +
+        "- Arbeitsfläche je Fahrschüler 1 m² und Arbeitsplatz für Fahrlehrer inkl. Arbeitsmittel 8 m²\n" +
+        "- Visualisierungsmöglichkeiten (Projektor, Flipchart, Whiteboard etc.)\n" +
+        "- Lage der Räumlichkeiten (Stadtteil)\n" +
+        "- Räumlichkeiten ansprechend und sauber\n" +
+        "- geräusch- und geruchsarme Räume"
+    },
+
+    {
+      id: "paed-46",
+      frage:
+        "**Planung von theoretischem Unterricht**\n" +
+        "Welche Methoden können im Unterricht angewendet werden?",
+      antwort:
+        "- **Lehrvortrag**\n" +
+        "- **Lehrgespräch**\n" +
+        "- **Erklären**\n" +
+        "- **Erzählen**\n" +
+        "- **Veranschaulichen**\n" +
+        "- **Modellverfahren**\n" +
+        "- **Aufgaben**\n" +
+        "- **Üben, Wiederholen**\n" +
+        "- **Kartenabfrage**\n" +
+        "- **Zurufsammlung**\n" +
+        "- **Fallbeispiele / Situationsanalyse**\n" +
+        "- **Diskussion**\n" +
+        "- **Englische Debatte**\n" +
+        "- **Aquarium**\n" +
+        "- **Moderation**\n" +
+        "- **Stationenlernen**\n" +
+        "- **Lernspiele**\n" +
+        "- **Rollenspiele**\n" +
+        "- **Tischset**"
+    },
+
+    {
+      id: "paed-47",
+      frage:
+        "**Planung von theoretischem Unterricht**\n" +
+        "Welche Medien können im Unterricht eingesetzt werden?",
+      antwort:
+        "- **Bilder / Abbildungen**\n" +
+        "- **Texte**\n" +
+        "- **Lehrbücher**\n" +
+        "- **Arbeitsblätter**\n" +
+        "- **Tafel / Whiteboard**\n" +
+        "- **Flipchart**\n" +
+        "- **Lehrmodelle**\n" +
+        "- **Anschauungsmaterial**\n" +
+        "- **Lernspiele / Rätsel**\n" +
+        "- **Overheadprojektoren**\n" +
+        "- **Filme und Videos**\n" +
+        "- **PC-Programme / Unterrichtssoftware**\n" +
+        "- **PowerPoint-Präsentation**\n" +
+        "- **Internetbasierte Medien**"
+    },
+
+    {
+      id: "paed-48",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was versteht man unter Wahrnehmung?",
+      antwort:
+        "**Unter Wahrnehmung versteht man einen Prozess und das Resultat der Informationsgewinnung/-verarbeitung\n" +
+        "der Reize aus der Umgebung und dem eigenen Körper.**\n\n" +
+        "Wahrnehmungen: Alle Reize und Informationen, die wir über unsere Sinne wahrnehmen\n" +
+        "(Riechen, Hören, Schmecken, Fühlen, Sehen)."
+    },
+
+    {
+      id: "paed-49",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was bedeutet Binnendifferenzierung?",
+      antwort:
+        "**Binnendifferenzierung ist die innere Differenzierung (Unterscheidung) innerhalb einer Lerngruppe.**\n" +
+        "Auf diese Differenzierung hat der Fahrlehrer fachlich einzugehen, ohne die Gruppe zu spalten.\n\n" +
+        "Die Voraussetzungen zum Lernen sind sehr unterschiedlich; hierfür sind viele Faktoren verantwortlich:\n" +
+        "- Vorbesitz Fahrerlaubnisklasse(n)\n" +
+        "- Alter\n" +
+        "- Herkunft\n" +
+        "- allgemeine Bildung und Aufnahmefähigkeit\n" +
+        "- unterschiedliche Lerntypen (auditiv, haptisch, visuell, kommunikativ)\n\n" +
+        "**Fahrlehrer haben deshalb angemessen auf die Unterschiede einzugehen.**"
+    },
+
+    {
+      id: "paed-50",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was ist mit Visualisierung gemeint?",
+      antwort:
+        "**Unter Visualisierung versteht man das Veranschaulichen von Medien als Hilfsmittel beim Lernen.**\n" +
+        "Nach der FahrschAusbO § 4 Abs. 1 müssen die Medien zielgerichtet ausgewählt und eingesetzt werden."
+    },
+
+    {
+      id: "paed-51",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was bedeutet exemplarische Vertiefung?",
+      antwort:
+        "Antwort und Erklärung:\n" +
+        "Bei der exemplarischen Vertiefung handelt es sich um die beispielhafte Vertiefung eines Themas.\n\n" +
+        "Der Fahrlehrer vermittelt anhand eines möglichen Beispiels einen bestimmten Inhalt,\n" +
+        "welcher ggf. aus einem anderen Thema bekannt ist. Den Schülern ist es nun leichter möglich,\n" +
+        "die Zusammenhänge zu verstehen und zu verknüpfen.\n\n" +
+        "**Es geht immer darum, dass Schüler das anhand eines Beispiels Erlernte auf ähnliche Aufgabenstellungen übertragen können.**\n\n" +
+        "Beispiel:\n" +
+        "Ein Fahrschüler kann mit Hilfe der Betriebsanleitung eines Fahrzeugs\n" +
+        "auf einen möglichen technischen Fehler eingehen."
+    },
+
+    {
+      id: "paed-52",
+      frage:
+        "**Grundlagen der Fahrschulpädagogik**\n" +
+        "Was versteht man unter Aggression?",
+      antwort:
+        "**Aggression bedeutet „herangehen“ und andererseits „angreifen“.**\n" +
+        "Ein Angriff „verbal“ oder „körperlich“ ist ein absichtliches feindseliges Verhalten,\n" +
+        "welches gezielt anderen Schaden zufügen soll.\n\n" +
+        "**Was wird als aggressives Verhalten im Straßenverkehr wahrgenommen?**\n" +
+        "- Drängeln\n" +
+        "- riskante Überholmanöver\n" +
+        "- dichtes Auffahren\n\n" +
+        "**Wieso kommt dieses Verhalten zustande?**\n" +
+        "Wenn jemand die Absicht besitzt, schnellstmöglich an sein Ziel zu gelangen\n" +
+        "und dabei durch Regeln oder andere Verkehrsteilnehmer gestört wird.\n" +
+        "Aus dieser Situation können Frustration und Aggression entstehen.\n" +
+        "In extremen Fällen verhalten sich Fahrer so, dass sie sogar Schädigungen\n" +
+        "anderer Verkehrsteilnehmer in Kauf nehmen."
+    },
+
+
 
 
   ]
