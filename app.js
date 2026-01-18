@@ -1025,10 +1025,37 @@ function naechsteKarte() {
   zeigeKarte();
 }
 
+
+function vorherigeKarte() {
+  if (!aktuelleKarten.length) return;
+
+  aktuellePosition =
+    (aktuellePosition - 1 + aktuelleKarten.length) % aktuelleKarten.length;
+
+  zeigeKarte();
+}
+
+
+
 function antwortZeigen() {
   const a = document.getElementById("antwort");
   if (!a) return;
   a.style.display = a.style.display === "none" ? "block" : "none";
 }
+
+function zufallKarten() {
+  if (!aktuelleKarten.length) return;
+
+  // Fisher-Yates Shuffle
+  for (let i = aktuelleKarten.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [aktuelleKarten[i], aktuelleKarten[j]] =
+      [aktuelleKarten[j], aktuelleKarten[i]];
+  }
+
+  aktuellePosition = 0;
+  zeigeKarte();
+}
+
 
 window.addEventListener("load", themaWechseln);
